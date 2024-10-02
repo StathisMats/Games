@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code the Robot!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Help the Robot!</h1>
+        <div id="grid">
+            <!-- The grid where the robot moves will be here -->
+        </div>
+        <div class="controls">
+            <button onclick="addCommand('up')">⬆️</button>
+            <button onclick="addCommand('left')">⬅️</button>
+            <button onclick="addCommand('down')">⬇️</button>
+            <button onclick="addCommand('right')">➡️</button>
+            <button onclick="runCommands()">Run</button>
+            <button onclick="restartGame()">Restart</button> <!-- Restart Button -->
+        </div>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
